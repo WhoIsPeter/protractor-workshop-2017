@@ -1,3 +1,5 @@
+import { browser } from "protractor";
+
 describe('Gicen a SDET learning protractor', () => {
     describe('when open Google Page', () => {
         beforeEach(() => {
