@@ -1,11 +1,12 @@
+sudo: required
 language: node_js
 cache:
-directories:
-- node_modules
+  directories:
+  - node_modules
 notifications:
-email: false
+  email: false
 node_js:
 - '8.8.1'
-branches:
+  branches:
 except:
 - /^v\d+\.\d+\.\d+$/
