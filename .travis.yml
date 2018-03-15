@@ -1,18 +1,11 @@
-sudo: required
-addons:
-  apt:
-    packages:
-      - google-chrome-stable
-before_install:
-  - google-chrome-stable --headless --disable-gpu --remote-debugging-port=9222 http://localhost
 language: node_js
 cache:
-  directories:
-  - node_modules
+directories:
+- node_modules
 notifications:
-  email: false
+email: false
 node_js:
-- '8.8.1'
-  branches:
+- '8'
+branches:
 except:
 - /^v\d+\.\d+\.\d+$/
